@@ -1,7 +1,13 @@
 package com.virna.projectfirebase;
 
+import com.google.firebase.database.IgnoreExtraProperties;
+
+@IgnoreExtraProperties
 public class Title {
     private String key, title, notes;
+
+    public Title() {
+    }
 
     public Title(String key, String title, String notes) {
         this.key = key;
